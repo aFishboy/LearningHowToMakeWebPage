@@ -1,10 +1,15 @@
+main {
+    background-color: rgb(191, 195, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .img-container {
     width: 100%;
     height: auto;
-    background-color: bisque;
+    background-color: rgb(207, 178, 140);
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 17%;
 }
 
@@ -20,4 +25,16 @@ header{
     color: white;
     background-color: rgb(36, 65, 91);
     text-align: center;
+}
+
+.right-aside {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.right-aside img { 
+    justify-content: center;
+    width: 40%;
+    height: auto;
 }
