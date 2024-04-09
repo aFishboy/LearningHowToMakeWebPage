@@ -1,3 +1,9 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
 main {
     background-color: rgb(191, 195, 236);
     display: flex;
@@ -5,7 +11,7 @@ main {
     justify-content: center;
 }
 
-.img-container {
+.main-section {
     width: 100%;
     height: auto;
     background-color: rgb(207, 178, 140);
@@ -13,7 +19,7 @@ main {
     gap: 17%;
 }
 
-.img-container img {
+.main-section img {
     width: 25%;
     height: auto;
 }
@@ -28,19 +34,25 @@ header{
 }
 
 .right-aside {
+    width: 35%;
     border-width: 2px;
     border-style: solid;
     border-color: black;
 }
 
 .right-aside img { 
-    justify-content: center;
+    display: block; /* Ensure image is a block element */
+    margin: 0 auto; /* Center the image horizontally */
     width: 40%;
     height: auto;
 }
 
-.footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer p {
+    color: rgb(94, 1, 1);
 }
