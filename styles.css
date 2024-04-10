@@ -2,48 +2,53 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    background-image: url('imgs/blob-scene-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main {
-    background-color: rgb(191, 195, 236);
+    /* background-color: rgb(191, 195, 236); */
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.main-section {
     width: 100%;
     height: auto;
-    background-color: rgb(207, 178, 140);
+    /* background-color: rgb(207, 178, 140); */
     display: flex;
     gap: 17%;
 }
 
-.main-section img {
+main img {
     width: 25%;
     height: auto;
+    border-radius: 50%; /* This will create a circular shape */
+    object-fit: cover; /* Ensures the image covers the entire circle */
 }
 
 header{
     padding: 20px;
     margin: auto;
     margin: 5px;
-    color: white;
-    background-color: rgb(36, 65, 91);
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(36, 65, 91); */
     text-align: center;
 }
 
-.right-aside {
-    width: 35%;
-    border-width: 2px;
+aside {
     border-style: solid;
     border-color: black;
+    text-align: center;
 }
 
-.right-aside img { 
-    display: block; /* Ensure image is a block element */
-    margin: 0 auto; /* Center the image horizontally */
-    width: 40%;
+.chicken-little-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px; /* Add some space between images and text */
+}
+
+.chicken-little-img-container img {
+    width: 15%;
     height: auto;
 }
 
