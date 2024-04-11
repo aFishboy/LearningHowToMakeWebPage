@@ -1,62 +1,80 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
-    background-image: url('imgs/blob-scene-haikei.svg');
+    /* background-image: url('imgs/blob-scene-haikei.svg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+header {
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(17, 45, 78);
+    color: white;
+}
+
 main {
-    /* background-color: rgb(191, 195, 236); */
+    background-color: rgb(219, 226, 239);
+    padding-top: 21vh;
+    padding-bottom: 26.5vh;
     display: flex;
+    justify-content: center; /* Center the flex items horizontally */
     align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: auto;
-    /* background-color: rgb(207, 178, 140); */
-    display: flex;
-    gap: 17%;
 }
 
 main img {
-    width: 25vw;
+    width: 20vw;
     height: auto;
-    border-radius: 50%; /* This will create a circular shape */
-    object-fit: cover; /* Ensures the image covers the entire circle */
+    border-radius: 50%;
+    margin-left: 3vw; /* Add some space between the image and text */
+    margin-right: 2vw; /* Add some space between the image and text */
 }
 
-header{
-    padding: 20px;
-    margin: auto;
-    margin: 5px;
-    color: rgb(0, 0, 0);
-    /* background-color: rgb(36, 65, 91); */
-    text-align: center;
+#down-arrow {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 4vw;
+    height: auto;
+    bottom: 3%;
+    right: 0%;
 }
 
 aside {
-    border-style: solid;
-    border-color: black;
+    padding-top: 10vh;
+    padding-bottom: 12vh;
+    background-color: rgb(17, 45, 78);
+    color: whitesmoke;
     text-align: center;
 }
 
 .chicken-little-img-container {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px; /* Add some space between images and text */
 }
 
 .chicken-little-img-container img {
-    height: 40vh; 
-    width: auto; 
-   
+    margin-bottom: 11vh;
+    height: 40vh;
+    width: auto;
 }
 
 footer {
+    background-color: rgb(219, 226, 239);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+#up-arrow {
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 4vw;
+    height: auto;
+    bottom: 12%;
+    right: 1%;
 }
 
 footer p {
