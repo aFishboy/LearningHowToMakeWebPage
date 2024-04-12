@@ -2,7 +2,6 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
-    /* background-image: url('imgs/blob-scene-haikei.svg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -16,7 +15,8 @@ header {
 }
 
 main {
-    background-color: rgb(219, 226, 239);
+    background-image: url('imgs/blob-scene-haikei.svg');
+    background-size: cover;
     padding-top: 21vh;
     padding-bottom: 26.5vh;
     display: flex;
@@ -24,12 +24,16 @@ main {
     align-items: center;
 }
 
+main section {
+    padding-right: 12vw;
+}
+
 main img {
     width: 20vw;
     height: auto;
     border-radius: 50%;
-    margin-left: 3vw; /* Add some space between the image and text */
-    margin-right: 2vw; /* Add some space between the image and text */
+    margin-left: 9vw; /* Add some space between the image and text */
+    margin-right: 5vw; /* Add some space between the image and text */
 }
 
 #down-arrow {
@@ -37,8 +41,13 @@ main img {
     transform: rotate(90deg);
     width: 4vw;
     height: auto;
-    bottom: 3%;
-    right: 0%;
+    bottom: 2%;
+    right: -4%;
+    transition: transform 0.3s ease;
+}
+
+#down-arrow:hover {
+    transform: rotate(90deg) scale(1.5); /* Apply scale without additional rotation */
 }
 
 aside {
@@ -47,6 +56,11 @@ aside {
     background-color: rgb(17, 45, 78);
     color: whitesmoke;
     text-align: center;
+}
+
+aside p {
+    padding-left: 17vw;
+    padding-right: 17vw;
 }
 
 .chicken-little-img-container {
@@ -61,6 +75,8 @@ aside {
 }
 
 footer {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     background-color: rgb(219, 226, 239);
     display: flex;
     justify-content: center;
@@ -75,8 +91,19 @@ footer {
     height: auto;
     bottom: 12%;
     right: 1%;
+    transition: transform 0.3s ease;
+}
+
+#up-arrow:hover {
+    transform: rotate(-90deg) scale(1.5); 
 }
 
 footer p {
-    color: rgb(94, 1, 1);
+    color: rgb(0, 0, 0);
+}
+
+.bottom {
+    display: block;
+    width: 40px;
+    height: 40px;
 }
