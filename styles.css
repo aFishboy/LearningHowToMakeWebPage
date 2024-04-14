@@ -21,7 +21,7 @@ header {
         padding-bottom: 5vh;
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Center the flex items horizontally */
+        justify-content: center; 
         align-items: center;
         text-align: center;
         padding-left: 5vw;
@@ -36,13 +36,55 @@ header {
     }
 
     #down-arrow {
+        display: none;
+    }
+
+    aside {
+        background-color: white;
+        padding-top: 0vh;
+        padding-bottom: 5vh;
+        color: black;
+        text-align: center;
+    }
+
+    aside p {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .chicken-little-img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .chicken-little-img-container img {
+        margin-bottom: 5vh;
+        width: 55vw;
+        height: auto;
+        border-radius: 12%;
+    }
+    
+    #up-arrow {
         position: absolute;
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
         width: 15vw;
         height: auto;
-        top: 2%;
-        right: -4%;
+        bottom: 12%;
+        right: 3%;
         transition: transform 0.3s ease;
+    }
+
+    footer {
+        padding-top: 3vh;
+        padding-bottom: 8vh;
+        background-color: rgb(7, 49, 112);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
     }
 }
 
@@ -79,61 +121,62 @@ header {
     main section {
         padding-right: 12vw;
     }
+
+    aside {
+        background-image: url('imgs/wave-haikei\(1\).svg');
+        background-size: cover;
+        padding-top: 30vh;
+        padding-bottom: 5vh;
+        /* background-color: rgb(17, 45, 78); */
+        color: black;
+        text-align: center;
+    }
+
+    aside p {
+        padding-left: 17vw;
+        padding-right: 17vw;
+    }
+
+    .chicken-little-img-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .chicken-little-img-container img {
+        margin-bottom: 5vh;
+        height: 40vh;
+        width: auto;
+        border-radius: 12%;
+    }
+    
+    #up-arrow {
+        position: absolute;
+        transform: rotate(-90deg);
+        width: 4vw;
+        height: auto;
+        bottom: 12%;
+        right: 1%;
+        transition: transform 0.3s ease;
+    }
+
+    footer {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        background-color: rgb(7, 49, 112);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+    }
 }
 
 #down-arrow:hover {
     transform: rotate(90deg) scale(1.5); /* Apply scale without additional rotation */
 }
 
-aside {
-    background-image: url('imgs/wave-haikei\(1\).svg');
-    background-size: cover;
-    padding-top: 30vh;
-    padding-bottom: 5vh;
-    background-color: rgb(17, 45, 78);
-    color: black;
-    text-align: center;
-}
-
-aside p {
-    padding-left: 17vw;
-    padding-right: 17vw;
-}
-
-.chicken-little-img-container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.chicken-little-img-container img {
-    margin-bottom: 5vh;
-    height: 40vh;
-    width: auto;
-    border-radius: 12%;
-}
-
-#up-arrow {
-    position: absolute;
-    transform: rotate(-90deg);
-    width: 4vw;
-    height: auto;
-    bottom: 12%;
-    right: 1%;
-    transition: transform 0.3s ease;
-}
-
 #up-arrow:hover {
     transform: rotate(-90deg) scale(1.5); 
-}
-
-footer {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    background-color: rgb(7, 49, 112);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
 footer p {
