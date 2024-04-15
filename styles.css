@@ -90,7 +90,7 @@ header {
 
 @media (min-width: 501px){
     main {
-        background-image: url('imgs/wave-haikei.svg');
+        background-image: url('imgs/wave-haikei.png');
         background-size: cover;
         background-position: bottom;
         padding-top: 14vh;
@@ -123,7 +123,7 @@ header {
     }
 
     aside {
-        background-image: url('imgs/wave-haikei\(1\).svg');
+        background-image: url('imgs/wave-haikei\(1\).png');
         background-size: cover;
         padding-top: 30vh;
         padding-bottom: 5vh;
